@@ -1,7 +1,35 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+      body {
+        width: 300px;
+        padding: 16px;
+        font-family: system-ui, -apple-system, sans-serif;
+      }
+      select, button {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
   <body>
-    <button id="sendTabs">Convert Tabs</button>
+    <select id="snapshotList">
+      <option value="">Select a Snapshot</option>
+    </select>
+    <button id="sendTabs">Create New Snapshot</button>
     <script src="popup.js"></script>
   </body>
 </html>
